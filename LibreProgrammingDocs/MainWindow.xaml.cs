@@ -26,7 +26,7 @@ namespace LibreProgrammingDocs
 
         private void LoadHomePage()
         {
-            LoadPage(@"Docs\Index.html", true);
+            LoadPage(@"Docs\Home.html", true);
         }
 
         private async void InitializeWebView()
@@ -53,7 +53,7 @@ namespace LibreProgrammingDocs
 
         private void homeBTN_Click(object sender, RoutedEventArgs e)
         {
-            LoadPage(@"Docs\Index.html", true);
+            LoadPage(@"Docs\Home.html", true);
         }
 
         private void settingsBTN_Click(object sender, RoutedEventArgs e)
@@ -65,15 +65,16 @@ namespace LibreProgrammingDocs
 
         private void creditsBTN_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("""
-                CREDITS:
-                    - Mpais14
-                    - (!) Microsoft Documentation (C#, F#, Visual Basic, etc.)
-                    - (!) Google Documentation (GoLang)
-                    - ... And more!s
+            LoadPage(@"Docs\Credits.html", true);
+            /* MessageBox.Show("""
+                 CREDITS:
+                     - Mpais14
+                     - (!) Microsoft Documentation (C#, F#, Visual Basic, etc.)
+                     - (!) Google Documentation (GoLang)
+                     - ... And more!
 
-                    (!) - Not implemented
-            """, "", MessageBoxButton.OK, MessageBoxImage.Information);
+                     (!) - Not implemented
+             """, "", MessageBoxButton.OK, MessageBoxImage.Information);*/
         }
     }
 }
