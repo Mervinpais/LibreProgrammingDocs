@@ -1,0 +1,25 @@
+﻿body {
+	background-color: #393939;
+	color: #ffffff;
+	font-family: 'Segoe UI';
+}
+
+.h1Header {
+	float: left;
+	margin: 0;
+}
+
+#titledGreenHEADER {
+	transform: rotate(-4deg) translateY(10px) translateX(-4px);
+	color: green;
+}
+
+#titledYellowHEADER {
+	transform: rotate(4deg) translateY(10px) translateX(0px);
+	color: yellow;
+}
+
+#titledBlueHEADER {
+	transform: rotate(-2deg) translateY(10px) translateX(4px);
+	color: dodgerblue;
+}
