@@ -21,6 +21,8 @@
                 <RowDefinition Height="1.25*"></RowDefinition>
                 <RowDefinition Height="12*"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*">
+                </RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
                 <!--<RowDefinition Height="1*"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>-->
@@ -30,13 +32,17 @@
                 Background="#252525" Foreground="White" Content="Home" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24px"
                 Click="homeBTN_Click"/>
             <Button 
+                Name="chatgptBTN"
+                Background="#252525" Foreground="White"
+                Grid.Row="2" Content="ChatGPT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16px" Click="chatgptBTN_Click"/>
+            <Button 
                 Name="creditsBTN"
                 Background="#252525" Foreground="White"
-                Grid.Row="2" Content="Credits" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16px" Click="creditsBTN_Click"/>
+                Grid.Row="3" Content="Credits" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16px" Click="creditsBTN_Click"/>
             <Button 
                 Name="settingsBTN"
                 Background="#252525" Foreground="White"
-                Grid.Row="3" Content="Settings" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16px" Click="settingsBTN_Click"/>
+                Grid.Row="4" Content="Settings" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16px" Click="settingsBTN_Click"/>
         </Grid>
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
