@@ -30,7 +30,7 @@
             <Button 
                 Name="homeBTN"
                 Background="#252525" Foreground="White" Content="Home" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24px"
-                Click="homeBTN_Click"/>
+                Click="homeBTN_Click" FontWeight="Bold"/>
             <Button 
                 Name="chatgptBTN"
                 Background="#252525" Foreground="White"
@@ -53,7 +53,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
-                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="15*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Button Grid.Column="0" Name="backBTN" Content="◀️"
                         Click="backBTN_Click"/>
