@@ -22,6 +22,12 @@ namespace LibreProgrammingDocs
             InitializeComponent();
             InitializeWebView();
             LoadHomePage();
+            webbrowser.NavigationCompleted += Webbrowser_NavigationCompleted;
+        }
+
+        private void Webbrowser_NavigationCompleted(object? sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
+        {
+            sourceLocationTB.Text = webbrowser.Source.ToString();
         }
 
         private void LoadHomePage()
@@ -37,6 +43,11 @@ namespace LibreProgrammingDocs
         }
         public void LoadPage(string path, bool relative = false)
         {
+            if (path.EndsWith("/"))
+            {
+                MessageBox.Show("Illegal Move!");
+                return;
+            }
             string currentDirectory = Directory.GetCurrentDirectory();
 
             string fullPath = path;
@@ -75,6 +86,24 @@ namespace LibreProgrammingDocs
 
                      (!) - Not implemented
              """, "", MessageBoxButton.OK, MessageBoxImage.Information);*/
+        }
+
+        private void sourceLocationTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                LoadPage(sourceLocationTB.Text);
+            }
+        }
+
+        private void backBTN_Click(object sender, RoutedEventArgs e)
+        {
+            webbrowser.GoBack();
+        }
+
+        private void forwardBTN_Click(object sender, RoutedEventArgs e)
+        {
+            webbrowser.GoForward();
         }
     }
 }

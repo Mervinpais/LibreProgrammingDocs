@@ -9,68 +9,113 @@
 <body>
     <header>
         <h1>C# Documentation</h1>
-        <p>Overview of C# and its features.</p>
+        <p>An overview of C# and its features.</p>
     </header>
 
     <main>
         <section>
             <h2>Summary</h2>
             <p>
-                C# is a powerful programming language designed for modern application development. It supports a wide range of features including:
+                C# is a modern, object-oriented programming language developed by Microsoft as part of its .NET initiative. Designed for building a wide range of enterprise applications that run on the .NET Framework, C# is simple, powerful, type-safe, and object-oriented.
             </p>
             <ul>
-                <li>Rich syntax</li>
-                <li>Advanced data structures</li>
-                <li>Comprehensive standard library</li>
-                <li>Multi-paradigm support</li>
+                <li>Rich syntax and semantics</li>
+                <li>Robust standard library</li>
+                <li>Multi-paradigm support (object-oriented, functional, and component-oriented)</li>
+                <li>Strong memory management and type safety</li>
             </ul>
         </section>
 
         <section>
             <h2>Syntax Overview</h2>
             <p>
-                The syntax of LanguageName is designed to be efficent and similar to older C-Based languages as it's part of the C Family
+                The syntax of C# is designed to be simple and readable, with a structure that is similar to other C-based languages, making it easy for developers familiar with C, C++, or Java to learn and use. Here is a basic example of C# syntax:
             </p>
-            <pre><code>
-            </code></pre>
-        </section>
+            <div class="code">
+                <pre><code>
+using System;
 
-ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;':",./<>?`~\\
-АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя
-àáâäæãåāèéêëēėęîïíīįìôöòóœøōõûüùúūÿçčćžźżñńßśšł
-अआइईउऊऋएऐओऔअंअःकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहक्षत्रज्ञ
-ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ى ئ ء
-的一是了我不人在他有这个上们来到时大地为子中你说生国年着就那和要她出也得里后自以会家可下而过天去能对小多然于心学么之都好看起发当没成只如事把还用第样道想作种开美总从无情己面最女但现前些所同日手又行意动方期它头经长儿回位分爱老因很给名法间斯知世什两次使身者被高已亲其进此话常与活正感见明问力理尔点文几定本公特做外孩相西果走将月十实向声车全信重机工物气每并别真打太新比才便夫再书部水像眼等体却加电主界门利海受听表德少克代员许稜先口由死安写性马光白或住难望教命花结乐色更拉东神记处让母父应直象数四场京务感目题英解再书部水像眼等体却加电主界门利海受听表德少克代员许稜先口由死安写性马光白或住难望教命花结乐色更拉东神记处让母父应直象数四场京务感目题英解
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
+            </code></pre>
+            </div>
+        </section>
 
         <section>
             <h2>Key Features</h2>
             <p>
-                LanguageName offers several key features that make it stand out:
+                C# offers several key features that make it a versatile and powerful programming language:
             </p>
             <ul>
-                <li>Feature 1: Description of feature 1.</li>
-                <li>Feature 2: Description of feature 2.</li>
-                <li>Feature 3: Description of feature 3.</li>
-                <li>Feature 4: Description of feature 4.</li>
+                <li><strong>Object-Oriented:</strong> Supports encapsulation, inheritance, and polymorphism.</li>
+                <li><strong>Type-Safe:</strong> Prevents type errors that can lead to runtime errors.</li>
+                <li><strong>Interoperable:</strong> Easily interacts with other languages and systems, particularly through the .NET ecosystem.</li>
+                <li><strong>Component-Oriented:</strong> Supports component-based programming with properties, methods, events, and attributes.</li>
+                <li><strong>Asynchronous Programming:</strong> Includes async and await keywords for writing asynchronous code.</li>
+                <li><strong>Garbage Collection:</strong> Automatic memory management to reclaim unused memory.</li>
+                <li><strong>Exception Handling:</strong> Provides a robust model for handling runtime errors.</li>
+                <li><strong>LINQ:</strong> Language Integrated Query for data manipulation within the language syntax.</li>
             </ul>
         </section>
 
         <section>
             <h2>Example Code</h2>
             <p>
-                Here are some example snippets of LanguageName code:
+                Here are some example snippets of C# code to demonstrate various features:
             </p>
-            <pre><code>
-CODE
+            <div class="code">
+                <pre><code>
+// Example of a class definition
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public void Greet()
+    {
+        Console.WriteLine($"Hello, my name is {Name} and I am {Age} years old.");
+    }
+}
+
+// Example of asynchronous programming
+public async Task<int> FetchDataAsync(string url)
+{
+    using (HttpClient client = new HttpClient())
+    {
+        HttpResponseMessage response = await client.GetAsync(url);
+        string data = await response.Content.ReadAsStringAsync();
+        return data.Length;
+    }
+}
+
+// Example of LINQ query
+int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+var evenNumbers = from number in numbers
+                  where number % 2 == 0
+                  select number;
+                  
+foreach (var num in evenNumbers)
+{
+    Console.WriteLine(num);
+}
             </code></pre>
+                </div>
         </section>
 
         <section>
             <h2>Documentation Links</h2>
             <ul>
-                <li><a href="#">Official LanguageName Documentation</a></li>
-                <li><a href="#">LanguageName Tutorials</a></li>
-                <li><a href="#">LanguageName API Reference</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Official C# Documentation</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/">C# Tutorials</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/?view=net-6.0">C# API Reference</a></li>
             </ul>
         </section>
     </main>
