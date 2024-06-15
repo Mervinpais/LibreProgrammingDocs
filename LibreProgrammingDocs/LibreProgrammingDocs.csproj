@@ -13,12 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Docs\Index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Docs\styles.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+	  <None Update="Docs\**">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
   </ItemGroup>
 
 </Project>

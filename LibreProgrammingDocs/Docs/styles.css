@@ -23,3 +23,10 @@
 	transform: rotate(-2deg) translateY(10px) translateX(4px);
 	color: dodgerblue;
 }
+
+code, .code {
+	padding: 2px 2px 2px 50px;
+	background-color: #080808;
+	border-radius: 25px;
+	word-wrap: normal;
+}
